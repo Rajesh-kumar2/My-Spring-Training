@@ -1,0 +1,12 @@
+management:
+ security: 
+  enabled: false
+zuul:
+ prefix: /api
+ routes:
+  app1:
+   path: /app1/**
+   url: http://localhost:8081
+  app2:
+   path: /app2/**
+   url: http://localhost:8082

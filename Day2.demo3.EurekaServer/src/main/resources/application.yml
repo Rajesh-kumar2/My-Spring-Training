@@ -1,0 +1,25 @@
+management:
+ security:
+  enabled: false
+spring:
+  application:
+    name: myeserver
+
+server:
+  port: 8080
+  
+eureka:
+ instance:
+  hostname: localhost
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+ 
+ server:
+  waitTimeInMsWhenSyncEmpty: 0
+  
+logging:
+  level:
+    com.netflix: 'INFO'
+    org.springframework.cloud: 'INFO'
+  

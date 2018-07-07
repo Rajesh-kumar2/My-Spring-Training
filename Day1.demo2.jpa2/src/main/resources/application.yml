@@ -1,0 +1,13 @@
+spring:
+ datasource:
+  url: jdbc:hsqldb:hsql://localhost/
+  username: sa
+  password:
+  
+ jpa:
+  show-sql: true
+  hibernate: 
+   ddl-auto: update
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.HSQLDialect

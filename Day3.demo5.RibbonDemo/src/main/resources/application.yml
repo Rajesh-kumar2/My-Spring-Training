@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: serviceconsumer
+server:
+ port: 8085
+db-app:
+ ribbon:
+  eureka:
+   enabled: false
+  listOfServers: localhost:8080, localhost:8081
+  ServerListRefreshInterval: 15000
